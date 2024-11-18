@@ -1,4 +1,4 @@
 def call(String Project, String ImageTag, String dockerhubuser ){
-sh "docker compose up -d ${dockerhubuser}/${imageName}:${tag}"
+sh "docker compose up -d ${dockerhubuser}/${Project}:${ImageTag}"
 
 }
