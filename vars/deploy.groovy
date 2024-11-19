@@ -1,4 +1,4 @@
-def call(String Project, String ImageTag, String dockerhubuser ){
-sh "docker compose up -d ${dockerhubuser}/${Project}:${ImageTag}"
+def call(){
+sh "docker compose up down && docker compose up -d"
 
 }
